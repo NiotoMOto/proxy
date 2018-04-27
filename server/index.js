@@ -13,7 +13,7 @@ mongoose.Promise = Promise;
 app.use(cors())
 
 const myLimit = typeof (process.argv[2]) != 'undefined' ? process.argv[2] : '100kb';
-mongoose.connect('mongodb://localhost/database');
+mongoose.connect('mongodb://localhost/response');
 
 app.use(bodyParser.json({
   limit: myLimit,
