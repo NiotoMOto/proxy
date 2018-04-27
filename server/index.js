@@ -3,11 +3,14 @@ const request = require('request');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 const Response = require('./models/response');
 
 const app = express();
 mongoose.Promise = Promise;
+
+app.use(cors())
 
 const myLimit = typeof (process.argv[2]) != 'undefined' ? process.argv[2] : '100kb';
 mongoose.connect('mongodb://localhost/database');
