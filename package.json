@@ -1,0 +1,25 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "antoine.guillemoto <antoine.guillemoto@rueducommerce.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "mongod": "mongod --dbpath ./server/datas"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16",
+    "proxy": "^0.2.4",
+    "request": "^2.85.0"
+  }
+}

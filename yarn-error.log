@@ -1,0 +1,66 @@
+Arguments: 
+  /home/antoine/.nvm/versions/node/v9.2.0/bin/node /home/antoine/.nvm/versions/node/v9.2.0/bin/yarn
+
+PATH: 
+  /etc/mongodb/bin:/etc/mongodb/bin:/home/antoine/.nvm/versions/node/v9.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/snap/bin:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  9.2.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "learn",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "antoine.guillemoto <antoine.guillemoto@rueducommerce.com>",
+    "license": "MIT",
+    "scripts": {
+      "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+      "proxy": "node ./server/proxy.js"
+    },
+    "babel": {
+      "presets": [
+        "env",
+        "react",
+        "stage-2"
+      ]
+    },
+    "devDependencies": {
+      "eslint": "^4.19.1",
+      "eslint-config-airbnb": "^16.1.0",
+      "eslint-plugin-import": "^2.11.0",
+      "eslint-plugin-jsx-a11y": "^6.0.3",
+      "eslint-plugin-react": "^7.7.0",
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "bluebird": "^3.5.1",
+      "body-parser": "^1.18.2",
+      "crypto": "^1.0.1",
+      "express": "^4.16.3",
+      "mongoose": "^5.0.16",
+      "proxy": "^0.2.4",
+      "request": "^2.85.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /media/antoine/Windows/dev/proxy/package.json: Unexpected token } in JSON at position 589
+      at JSON.parse (<anonymous>)
+      at /home/antoine/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/home/antoine/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /home/antoine/.nvm/versions/node/v9.2.0/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
